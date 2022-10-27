@@ -1,0 +1,173 @@
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+{<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{#1}}%
+     \item[]
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{-0.5#1}}%
+\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}
+{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+	{\LARGE \textbf{Bassey Ude}}\\
+	Greensboro, North Carolina
+	\vspace{0.05cm}
+	\\
+	\raisebox{-0.2\height} {\Large \faPhoneSquare} \ \  (636) 497-2212 \hfill\raisebox{-0.2\height}{\Large \faEnvelopeSquare} \ \ bassey.ude88@gmail.com\hfill \raisebox{-0.2\height}{\Large \faGithubSquare} \ \ https://github.com/BasseyUde1  
+		
+	
+%\hfill \raisebox{-0.2\height}
+\vspace{}
+{\Large \faLinkedinSquare}  linkedin.com/in/Bassey Ude
+\end{center}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Education}
+
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+	\item
+	      \headerrow
+	      {\textbf{North Carolina A and T }}
+	     {\textbf{USA}}
+	      \headerrow
+	      {\emph{M.S. Computer Science}}
+	      {\emph{Aug 2022 - Dec 2024}}
+	      \headerrow
+	      {\textbf{Coventry University}}
+	     {\textbf{ Nov 2015, UK}}
+	      {\emph{BSc Computer Science}}
+	      {\textbf{}}
+	      	      
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Skills}
+
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em,noitemsep]
+	\item \textbf{Languages:}
+	      Python, C++, LaTeX, SQL, SPSS
+     \item Cyber security, IT project Risk and Recovery, Cloud computing, Data Analysis, Operating Systems 
+	  
+	%\item \textbf{Software:}
+	      %Atlassian (Bitbucket, Jira, Confluence), AWS (DynamoDB, EC2, Lambda, RDS, Redshift, S3, SQS), Microsoft (Azure DevOps, Visual Studio), DigitalOcean, Django, Heroku, IntelliJ IDEA, Selenium
+\end{itemize}
+
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Experience}
+
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+		
+	\item
+	      \headerrow
+	      {\textbf{BaudSpace Warehouse Nig,    Lagos}}
+	       
+	      
+	 {\emph{ Applications Support Analyst  Jun 2017 -- Feb 2022}}
+	  
+	      \begin{itemize*}
+	      	\item Performed troubleshooting, optimization and maintenance of network applications.
+	      	\item Designed and implemented quality-of-service dashboards and performance frameworks to dynamically detect performance issues across some top companies.
+	      	\item Improved data processing scripts that analyze daily site performance data for 1000+ companies, performance incidents, and engineering system health.
+	      	\item Designed and implemented training tools for network systems and applications to train in-house staffs and clients.
+	      	\item Applied knowledge of application components with query tools to track performance metrics, providing real-time report which increased productivity and clients by 30 percent  in 2 years
+	      \end{itemize*}
+	      	      
+	\item
+	      \headerrow
+	      {\textbf{Nigerian Army, { National Youth Service, Lokoja}}}
+	      
+	   
+	      {\emph{Database Administrator,   April 2016 -- April 2017}}
+	      %{\emph{April 2016 -- April 2017}}
+	      \begin{itemize*}
+	      	\item  Designed, collated and performed statistical analysis on the Nigerian Army personnel using SQL and MS Office packages
+	      	%\item Reduced the US Prime Wardrobe non-payment rate significantly by implementing additional validations based on customer behavior patterns.
+	      	\item Designed and implemented database backup, archiving and storage strategy which redefined organised and professional way of database management.
+	      	\item I performed periodic training and support for the Nigerian Army personnel on database management and maintenance
+	      	%\item Migrated Prime Wardrobe's accounting backend to a next-generation plugin-based service, allowing for easy future integration with other retail programs.
+	      \end{itemize*}
+	      %\headerrow
+	      %{\emph{Customer and Sales Service Manager}}
+	      %{\emph{June 2014 -- October 2016}}
+	      \item
+	      \headerrow
+	      {\textbf{Agiditex Ventures { }}}
+	      
+	   
+	      {\emph{Customer and Sales Service Manager, Feb 2011 - Nov 2012}}
+	      %{\emph{April 2016 -- April 2017}}
+	      \begin{itemize*}
+	      	\item Provided client support by responding to enquiries and  other support channels which increased client satisfaction rate to 98 percent throughout my service time.
+	      	\item Worked in a team to design and implement an automated ordering solution for the business, reducing the work required in monthly ordering time.
+	      	\item Supervised over 20 employees and assessed performances to determine training needs and define accurate pathways to increase productivity.
+	      \end{itemize*}
+	      	      
+	\item
+	      \headerrow
+	      {\textbf{Project}}
+	      %{\textbf{San Francisco, CA}}
+	      
+	      %{\emph{Engineering Intern}}
+	      %{\emph{June 2013 -- August 2013}}
+	      \begin{itemize*}
+	      	\item Team Lead in the development of video game project which examines the backend activities of the operating system including CPU count and CPU statistics 
+	      	\item Building algorithm that propses a more robust and secure aggregation in federated Learning
+	      \end{itemize*}
+	      	      
+\end{itemize}
+
+
+
+
+
+\end{document}
